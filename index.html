@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayLink Secure • Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading { font-family: system-ui; font-weight: 700; }
+        .neon-glow { box-shadow: 0 0 25px rgba(0, 240, 255, 0.4); }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #22d3ee;
+            transform: translateY(-2px);
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel-slide {
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-[#0a1428] text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-[#0a1428]/95 backdrop-blur-md fixed w-full z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img id="app-logo" 
+                     src="https://res.cloudinary.com/ddn35a1bv/image/upload/f_auto,q_auto/logo_wx0zw4" 
+                     alt="PayLink Logo" 
+                     class="w-10 h-10 rounded-2xl object-contain">
+                <span class="heading text-3xl tracking-tight">PayLink Secure</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#howto" class="nav-link">How to Use</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Download APK Button -->
+            <a href="https://drive.google.com/file/d/1CgK2AtWDDVEm4snI1W-_kuRweYLX6nUJ/view?usp=sharing" 
+               download="PayLinkSecure.apk"
+               class="bg-gradient-to-r from-cyan-400 to-emerald-400 text-black px-6 py-2.5 rounded-3xl font-semibold hover:scale-105 transition shadow-lg flex items-center gap-2">
+                <i class="fa-solid fa-download"></i>
+                Download APK
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-[#0a1428] to-[#020617]">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="heading text-6xl md:text-7xl leading-tight">
+                    Safe Fast Reliable
+                </h1>
+                <p class="text-xl text-gray-300 mt-6 max-w-md">
+                    Send money, manage accounts, and protect your finances with confidence.
+                </p>
+                <div class="mt-10">
+                    <a href="https://drive.google.com/file/d/1CgK2AtWDDVEm4snI1W-_kuRweYLX6nUJ/view?usp=sharing" 
+                       download="app-release.apk"
+                       class="bg-gradient-to-r from-cyan-400 to-emerald-400 text-black px-10 py-5 rounded-3xl font-semibold text-lg hover:scale-105 transition inline-flex items-center gap-3">
+                        <i class="fa-solid fa-download"></i>
+                        Download APK
+                    </a>
+                </div>
+            </div>
+
+            <!-- Phone Mockup -->
+            <div class="flex justify-center">
+                <div class="bg-[#0f172a] border-8 border-gray-900 rounded-[52px] w-80 h-[620px] overflow-hidden shadow-2xl neon-glow relative">
+                    <div class="bg-[#0a1428] h-11 flex items-center justify-between px-6 text-xs">
+                        <div>10:54</div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-signal"></i>
+                            <i class="fa-solid fa-wifi"></i>
+                            <div>85%</div>
+                        </div>
+                    </div>
+                    <div class="h-full bg-[#0a1428] p-5 text-white">
+                        <div class="bg-gradient-to-br from-[#1e2937] to-[#0f172a] rounded-3xl p-5 mb-6">
+                            <div class="flex items-center gap-3">
+                                <img src="https://res.cloudinary.com/ddn35a1bv/image/upload/f_auto,q_auto/logo_wx0zw4" alt="PayLink Logo" class="w-12 h-12 rounded-2xl object-contain">
+                                <div class="font-bold text-xl">PAYLINK</div>
+                            </div>
+                            <div class="mt-6 text-sm text-gray-300">Available Balance</div>
+                            <div class="text-4xl font-bold mt-1">₱ 14,025.38</div>
+                            <div class="text-sm mt-1">PATRICK</div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 mb-8">
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-2xl">➤</div>
+                                <div class="text-xs mt-2">Send</div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 bg-emerald-500 rounded-full flex items-center justify-center text-3xl">+</div>
+                                <div class="text-xs mt-2">Cash In</div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center text-2xl">📱</div>
+                                <div class="text-xs mt-2">Receive</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why PayLink Secure? -->
+    <section class="py-24 bg-[#0a1428]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl heading text-center mb-16">Why PayLink Secure?</h2>
+            <div class="grid md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-5">
+                    <div class="bg-gradient-to-br from-blue-900/50 to-cyan-900/30 rounded-3xl p-10 text-center md:text-left">
+                        <div class="text-6xl leading-none font-bold text-white">
+                            Send<br>Track<br>Secure
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-7">
+                    <div class="bg-white/10 backdrop-blur-md rounded-3xl p-10 text-lg leading-relaxed">
+                        With PayLink Secure, users can manage their finances effortlessly. Send and receive money, 
+                        monitor your balance, and track transactions in real time. The app ensures transparency, 
+                        security, and a smooth user experience.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-[#020617]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl heading text-center mb-4">App Gallery</h2>
+            <p class="text-center text-gray-400 mb-12">Screenshots from PayLink Secure</p>
+
+            <div class="carousel-container max-w-2xl mx-auto relative">
+                <div id="carousel" class="flex carousel-slide">
+                    <img src="https://res.cloudinary.com/ddn35a1bv/image/upload/f_auto,q_auto/1_vbywue" class="w-full flex-shrink-0 rounded-3xl" alt="Screenshot 1">
+                    <img src="https://res.cloudinary.com/ddn35a1bv/image/upload/f_auto,q_auto/2_hs0bf3" class="w-full flex-shrink-0 rounded-3xl" alt="Screenshot 2">
+                    <img src="https://res.cloudinary.com/ddn35a1bv/image/upload/f_auto,q_auto/3_gorck9" class="w-full flex-shrink-0 rounded-3xl" alt="Screenshot 3">
+                </div>
+
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black p-4 rounded-full">
+                    <i class="fa-solid fa-chevron-left text-2xl"></i>
+                </button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black p-4 rounded-full">
+                    <i class="fa-solid fa-chevron-right text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use -->
+    <section id="howto" class="py-24 bg-[#0a1428]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl heading text-center mb-16">How to Use PayLink Secure</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 p-8 rounded-3xl">
+                    <div class="text-5xl mb-6">1️⃣</div>
+                    <h3 class="text-2xl font-semibold mb-3">Download & Register</h3>
+                    <p class="text-gray-400">Download the app and sign up with your phone number or email.</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl">
+                    <div class="text-5xl mb-6">2️⃣</div>
+                    <h3 class="text-2xl font-semibold mb-3">Verify & Add Funds</h3>
+                    <p class="text-gray-400">Complete verification and cash in using your preferred method.</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl">
+                    <div class="text-5xl mb-6">3️⃣</div>
+                    <h3 class="text-2xl font-semibold mb-3">Start Transacting</h3>
+                    <p class="text-gray-400">Send money, pay bills, or scan QR codes instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-[#020617]">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-5xl heading mb-8">Contact the Developer</h2>
+            <p class="text-xl text-gray-300 mb-10">Have questions? Need support? Reach out to us.</p>
+            
+            <div class="bg-white/5 backdrop-blur-md rounded-3xl p-10">
+                <div class="space-y-6 text-left max-w-md mx-auto">
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-envelope text-cyan-400 text-2xl"></i>
+                        <div>
+                            <div class="font-medium">Email</div>
+                            <a href="mailto:patrickvillasista224@gmail.com" class="text-cyan-400 hover:underline">patrickvillasista224@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download-section" class="py-28 bg-gradient-to-br from-cyan-950 to-emerald-950 text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-5xl heading">Download PayLink Secure</h2>
+            <p class="text-xl mt-4 text-gray-300">Get the Android APK now</p>
+            <div class="mt-10">
+                <a href="https://drive.google.com/file/d/1CgK2AtWDDVEm4snI1W-_kuRweYLX6nUJ/view?usp=sharing" 
+                   download="PayLinkSecure.apk"
+                   class="inline-flex items-center gap-3 bg-gradient-to-r from-cyan-400 to-emerald-400 text-black px-12 py-6 rounded-3xl font-semibold text-xl hover:scale-105 transition">
+                    <i class="fa-solid fa-download text-2xl"></i>
+                    Download APK
+                </a>
+            </div>
+            <p class="text-sm text-gray-400 mt-6">Compatible with Android devices</p>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 text-center text-sm text-gray-500">
+        © 2026 PayLink Secure. All Rights Reserved.
+    </footer>
+
+    <script>
+        // Carousel Script
+        let currentSlide = 0;
+        const carousel = document.getElementById('carousel');
+        const totalSlides = carousel ? carousel.children.length : 0;
+
+        function updateCarousel() {
+            if (carousel) carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            if (totalSlides === 0) return;
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            if (totalSlides === 0) return;
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        // Auto slide
+        if (totalSlides > 0) {
+            setInterval(nextSlide, 5000);
+        }
+    </script>
+</body>
+</html>
